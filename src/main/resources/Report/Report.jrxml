@@ -3,6 +3,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_5" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="810b5278-6b9b-484a-96fa-f21d7b91d6ea">
     <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
     <property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (14)"/>
+    <parameter name="orderId" class="java.lang.String"/>
     <queryString language="SQL">
         <![CDATA[SELECT
     o.orderId,
@@ -17,6 +18,7 @@ FROM
     JOIN Orders o ON c.customerId = o.customerId
     JOIN OrderDetails od ON o.orderId = od.orderId
     JOIN Item i ON i.ItemId = od.ItemId
+    WHERE o.orderId = $P{orderId}
 GROUP BY
     o.orderId, c.customerId, od.ItemId, od.qty, i.price;]]>
     </queryString>
@@ -97,12 +99,9 @@ GROUP BY
         </band>
     </title>
     <pageHeader>
-        <band height="35" splitType="Stretch"/>
-    </pageHeader>
-    <columnHeader>
-        <band height="61" splitType="Stretch">
+        <band height="35" splitType="Stretch">
             <staticText>
-                <reportElement x="-3" y="10" width="73" height="30" uuid="84164704-b144-4fad-8b82-f217fb3f3b27">
+                <reportElement x="-10" y="2" width="73" height="30" uuid="84164704-b144-4fad-8b82-f217fb3f3b27">
                     <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="02c6c228-b85a-47d2-8325-e6439b29ca4c"/>
                 </reportElement>
                 <textElement>
@@ -110,8 +109,14 @@ GROUP BY
                 </textElement>
                 <text><![CDATA[orderId]]></text>
             </staticText>
+            <textField>
+                <reportElement x="70" y="2" width="73" height="30" uuid="5736791a-21de-4446-9465-b0c0a35e50ce">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="02c6c228-b85a-47d2-8325-e6439b29ca4c"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{orderId}]]></textFieldExpression>
+            </textField>
             <staticText>
-                <reportElement x="86" y="10" width="94" height="20" uuid="1d278a7a-03dc-4b18-ba1c-c16a57f1d3c1">
+                <reportElement x="190" y="7" width="94" height="20" uuid="1d278a7a-03dc-4b18-ba1c-c16a57f1d3c1">
                     <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c36b42d6-9783-4912-9a66-48c50de1a9f9"/>
                 </reportElement>
                 <textElement>
@@ -119,6 +124,16 @@ GROUP BY
                 </textElement>
                 <text><![CDATA[customerId]]></text>
             </staticText>
+            <textField>
+                <reportElement x="340" y="0" width="84" height="30" uuid="e79eb013-d2fb-46f5-b755-20eb349c5558">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c36b42d6-9783-4912-9a66-48c50de1a9f9"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{customerId}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageHeader>
+    <columnHeader>
+        <band height="61" splitType="Stretch">
             <staticText>
                 <reportElement x="190" y="10" width="60" height="30" uuid="3b79d2b1-b66e-404f-b79a-6e5242cfc361">
                     <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2e2058d8-8059-421e-aae9-2f19deeda168"/>
@@ -159,18 +174,6 @@ GROUP BY
     </columnHeader>
     <detail>
         <band height="32" splitType="Stretch">
-            <textField>
-                <reportElement x="-3" y="2" width="73" height="30" uuid="5736791a-21de-4446-9465-b0c0a35e50ce">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="02c6c228-b85a-47d2-8325-e6439b29ca4c"/>
-                </reportElement>
-                <textFieldExpression><![CDATA[$F{orderId}]]></textFieldExpression>
-            </textField>
-            <textField>
-                <reportElement x="86" y="1" width="84" height="30" uuid="e79eb013-d2fb-46f5-b755-20eb349c5558">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c36b42d6-9783-4912-9a66-48c50de1a9f9"/>
-                </reportElement>
-                <textFieldExpression><![CDATA[$F{customerId}]]></textFieldExpression>
-            </textField>
             <textField>
                 <reportElement x="189" y="1" width="74" height="30" uuid="ad624692-0d9b-4de6-9493-68923d82f32e">
                     <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2e2058d8-8059-421e-aae9-2f19deeda168"/>

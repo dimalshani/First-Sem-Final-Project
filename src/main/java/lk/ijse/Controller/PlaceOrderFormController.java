@@ -28,12 +28,11 @@ import java.io.IOException;
 import java.sql.Date;
 import java.sql.SQLException;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class PlaceOrderFormController {
 
+    public TextField txtOrderId;
     @FXML
     private Button btnAddToCart;
 
@@ -116,6 +115,7 @@ public class PlaceOrderFormController {
     @FXML
     private Button btnPrintBill;
 
+    String tempId ;
     private ObservableList<CartTm> obList = FXCollections.observableArrayList();
 
     public void initialize() {
@@ -312,6 +312,7 @@ public class PlaceOrderFormController {
 
         PlaceOrder po = new PlaceOrder(order, odList);
 
+        tempId = lblOrderId.getText();
         try {
             boolean isPlaced = PlaceOrderRepo.placeOrder(po);
             if(isPlaced) {
@@ -375,14 +376,21 @@ public class PlaceOrderFormController {
     }
     @FXML
     void btnPrintBillOnAction(ActionEvent event) throws JRException, SQLException {
-        JasperDesign jasperDesign = JRXmlLoader.load("src/main/resources/Report/Report.jrxml");
+        printBill();
+
+    }
+
+    public void printBill() throws JRException, SQLException {
+        JasperDesign jasperDesign = JRXmlLoader.load("src/main/resources/Report/Blank_A4_5.jrxml");
         JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
 
+        Map<String,Object> data = new HashMap<>();
+        data.put("tempId",lblOrderId.getText());
+        data.put("orderId",tempId);
+        data.put("total", lblNetTotal.getText());
 
-        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, null, DbConnection.getInstance().getConnection());
+        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, data, DbConnection.getInstance().getConnection());
         JasperViewer.viewReport(jasperPrint,false);
-
-
     }
 
 
