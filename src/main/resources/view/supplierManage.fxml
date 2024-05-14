@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.SupplierController">
+   <children>
+      <AnchorPane fx:id="rootNode" layoutX="81.0" layoutY="34.0" prefHeight="685.0" prefWidth="628.0">
+         <children>
+            <Label alignment="CENTER" layoutX="94.0" layoutY="48.0" prefHeight="43.0" prefWidth="426.0" text="SUPPLIER MANAGE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="164.0" prefHeight="29.0" prefWidth="152.0" text="Supplier Id" textFill="#292c2a">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="txtSupplierId" layoutX="239.0" layoutY="162.0" prefHeight="29.0" prefWidth="342.0" promptText="Supplier Id" style="-fx-background-color: #90EE90;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <Label layoutX="41.0" layoutY="236.0" prefHeight="29.0" prefWidth="152.0" text="Name" textFill="#232523">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="307.0" prefHeight="29.0" prefWidth="152.0" text="Location" textFill="#2d2f2c">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="368.0" prefHeight="29.0" prefWidth="152.0" text="Contact" textFill="#1d1e1d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" layoutX="239.0" layoutY="236.0" prefHeight="29.0" prefWidth="342.0" promptText="Name" style="-fx-background-color: #90EE90;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="txtLocation" layoutX="239.0" layoutY="307.0" prefHeight="29.0" prefWidth="342.0" promptText="Location" style="-fx-background-color: #90EE90;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="txtContact" layoutX="239.0" layoutY="368.0" prefHeight="29.0" prefWidth="342.0" promptText="Contact" style="-fx-background-color: #90EE90;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <Button fx:id="btnSave" layoutX="35.0" layoutY="546.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: #21D300;" text="SAVE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="152.0" layoutY="546.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: #21D300;" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="266.0" layoutY="546.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: #21D300;" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSearch" layoutX="381.0" layoutY="546.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: #21D300;" text="SEARCH">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnClear" layoutX="499.0" layoutY="546.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: #21D300;" text="CLEAR">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="733.0" prefHeight="29.0" prefWidth="758.0" text="The supplier management form in the pharmacy streamlines inventory control and ensures ">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="762.0" prefHeight="29.0" prefWidth="432.0" text=" seamless procurement of pharmaceutical products.">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
