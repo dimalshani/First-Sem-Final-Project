@@ -364,6 +364,8 @@ public class PlaceOrderFormController {
         try {
             Customer customer = CustomerRepo.searchById(id);
 
+            System.out.println(customer);
+
             lblCustomerName.setText(customer.getName());
 
         } catch (SQLException e) {
