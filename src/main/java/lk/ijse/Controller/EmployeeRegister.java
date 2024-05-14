@@ -55,21 +55,7 @@ public class EmployeeRegister {
     @FXML
     private TextField txtName;
 
-   /* @FXML
-    void btnBackOnAction(ActionEvent event) throws IOException {
-        Parent rootNode = FXMLLoader.load(getClass().getResource("/view/dashboard.fxml")); // Corrected path
-        Stage stage = (Stage) root.getScene().getWindow();
 
-
-        Scene scene = new Scene(rootNode);
-        //Stage stage = new Stage();
-        stage.setScene(scene);
-
-        stage.setTitle("Dashboard Form");
-
-        stage.show();
-
-    }*/
 
     @FXML
     void btnClearOnAction(ActionEvent event) {
@@ -161,6 +147,30 @@ public class EmployeeRegister {
         txtAddress.setText("");
 
     }
+
+    @FXML
+    void txtAddressOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void txtAgeOnAction(ActionEvent event) {
+        txtAddress.requestFocus();
+
+    }
+
+    @FXML
+    void txtEmployeeIdOnAction(ActionEvent event) {
+        txtName.requestFocus();
+
+    }
+
+    @FXML
+    void txtNameOnAction(ActionEvent event) {
+        txtAge.requestFocus();
+
+    }
+
 
     public void initialize() {
 

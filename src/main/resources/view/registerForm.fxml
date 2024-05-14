@@ -17,7 +17,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtUserId" layoutX="177.0" layoutY="80.0" prefHeight="31.0" prefWidth="411.0" promptText="User Id" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtUserId" layoutX="177.0" layoutY="80.0" onAction="#txtUserIdOnAction" prefHeight="31.0" prefWidth="411.0" promptText="User Id" style="-fx-background-color: #90EE90;">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></TextField>
@@ -26,7 +26,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtUserName" layoutX="177.0" layoutY="150.0" prefHeight="31.0" prefWidth="411.0" promptText="User Name" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtUserName" layoutX="177.0" layoutY="150.0" onAction="#txtUserNameOnAction" prefHeight="31.0" prefWidth="411.0" promptText="User Name" style="-fx-background-color: #90EE90;">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></TextField>
@@ -45,7 +45,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <TextField fx:id="txtPassword" layoutX="177.0" layoutY="212.0" prefHeight="31.0" prefWidth="411.0" promptText="Password" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtPassword" layoutX="177.0" layoutY="212.0" onAction="#txtPasswordOnAction" prefHeight="31.0" prefWidth="411.0" promptText="Password" style="-fx-background-color: #90EE90;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

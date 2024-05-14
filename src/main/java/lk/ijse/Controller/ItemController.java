@@ -58,16 +58,7 @@ public class ItemController {
     @FXML
     private TextField txtQty;
 
-  /*  @FXML
-    void btnBackOnAction(ActionEvent event) throws IOException {
-        AnchorPane anchorPane = FXMLLoader.load(getClass().getResource("/view/dashboard.fxml"));
-        Stage stage = (Stage) root.getScene().getWindow();
 
-        stage.setScene(new Scene(anchorPane));
-        stage.setTitle("Dashboard Form");
-        stage.centerOnScreen();
-
-    }*/
 
     @FXML
     void btnClearOnAction(ActionEvent event) {
@@ -167,6 +158,35 @@ public class ItemController {
         }
 
     }
+    @FXML
+    void txtDescriptionOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void txtItemIdOnAction(ActionEvent event) {
+        txtName.requestFocus();
+
+    }
+
+    @FXML
+    void txtNameOnAction(ActionEvent event) {
+        txtQty.requestFocus();
+
+    }
+
+    @FXML
+    void txtPriceOnAction(ActionEvent event) {
+        txtDescription.requestFocus();
+
+    }
+
+    @FXML
+    void txtQtyOnAction(ActionEvent event) {
+        txtPrice.requestFocus();
+
+    }
+
 }
 
 

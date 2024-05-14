@@ -20,7 +20,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtEmployeeId" layoutX="218.0" layoutY="153.0" prefHeight="35.0" prefWidth="411.0" promptText="Employee Id" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtEmployeeId" layoutX="218.0" layoutY="153.0" onAction="#txtEmployeeIdOnAction" prefHeight="35.0" prefWidth="411.0" promptText="Employee Id" style="-fx-background-color: #90EE90;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
@@ -29,7 +29,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtName" layoutX="218.0" layoutY="235.0" prefHeight="35.0" prefWidth="411.0" promptText="Name" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtName" layoutX="218.0" layoutY="235.0" onAction="#txtNameOnAction" prefHeight="35.0" prefWidth="411.0" promptText="Name" style="-fx-background-color: #90EE90;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
@@ -38,7 +38,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtAge" layoutX="218.0" layoutY="304.0" prefHeight="35.0" prefWidth="411.0" promptText="Age" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtAge" layoutX="218.0" layoutY="304.0" onAction="#txtAgeOnAction" prefHeight="35.0" prefWidth="411.0" promptText="Age" style="-fx-background-color: #90EE90;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
@@ -47,7 +47,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtAddress" layoutX="218.0" layoutY="375.0" prefHeight="35.0" prefWidth="411.0" promptText="Address" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtAddress" layoutX="218.0" layoutY="375.0" onAction="#txtAddressOnAction" prefHeight="35.0" prefWidth="411.0" promptText="Address" style="-fx-background-color: #90EE90;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>

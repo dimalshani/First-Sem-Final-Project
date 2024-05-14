@@ -58,16 +58,6 @@ public class PrescriptionController {
     @FXML
     private TextField txtPrescriptionId;
 
-   /* @FXML
-    void btnBackOnAction(ActionEvent event) throws IOException {
-        AnchorPane anchorPane = FXMLLoader.load(getClass().getResource("/view/dashboard.fxml"));
-        Stage stage = (Stage) root.getScene().getWindow();
-
-        stage.setScene(new Scene(anchorPane));
-        stage.setTitle("Dashboard Form");
-        stage.centerOnScreen();
-
-    }*/
 
     @FXML
     void btnClearOnAction(ActionEvent event) {
@@ -160,6 +150,32 @@ public class PrescriptionController {
         }
 
     }
+
+    @FXML
+    void txtDateOnAction(ActionEvent event) {
+       txtNameOfDocter.requestFocus();
+
+    }
+
+    @FXML
+    void txtDescriptionOnAction(ActionEvent event) {
+        txtDate.requestFocus();
+
+    }
+    @FXML
+    void txtNameOfDocterOnAction(ActionEvent event) {
+
+
+    }
+
+
+    @FXML
+    void txtPrescriptionIdOnAction(ActionEvent event) {
+        txtDescription.requestFocus();
+
+    }
+
+
 
     public void initialize() {
 

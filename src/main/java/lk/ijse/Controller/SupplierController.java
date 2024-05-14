@@ -153,6 +153,32 @@ public class SupplierController {
         }
 
     }
+
+    @FXML
+    void txtContactOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void txtLocationOnaction(ActionEvent event) {
+        txtContact.requestFocus();
+
+    }
+
+    @FXML
+    void txtNameOnAction(ActionEvent event) {
+        txtLocation.requestFocus();
+
+    }
+
+    @FXML
+    void txtSupplierIdOnAction(ActionEvent event) {
+        txtName.requestFocus();
+
+    }
+
+
+
     public void initialize() {
 
         addRegex(txtSupplierId);

@@ -84,6 +84,24 @@ public class RegisterController {
 
     }
 
+    @FXML
+    void txtPasswordOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void txtUserIdOnAction(ActionEvent event) {
+        txtUserName.requestFocus();
+
+    }
+
+    @FXML
+    void txtUserNameOnAction(ActionEvent event) {
+        txtPassword.requestFocus();
+
+    }
+
+
     public void initialize() {
 
         addRegex(txtUserId);
