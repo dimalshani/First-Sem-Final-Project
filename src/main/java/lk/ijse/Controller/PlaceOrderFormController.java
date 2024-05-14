@@ -376,6 +376,7 @@ public class PlaceOrderFormController {
         JasperDesign jasperDesign = JRXmlLoader.load("src/main/resources/Report/Report.jrxml");
         JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
 
+
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, null, DbConnection.getInstance().getConnection());
         JasperViewer.viewReport(jasperPrint,false);
 
