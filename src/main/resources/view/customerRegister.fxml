@@ -15,7 +15,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtCustomerId" layoutX="248.0" layoutY="104.0" prefHeight="33.0" prefWidth="353.0" promptText="Customer Id" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtCustomerId" layoutX="248.0" layoutY="104.0" onAction="#txtCustomerIdOnAction" prefHeight="33.0" prefWidth="353.0" promptText="Customer Id" style="-fx-background-color: #90EE90;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
@@ -24,7 +24,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtName" layoutX="248.0" layoutY="176.0" prefHeight="33.0" prefWidth="353.0" promptText="Name" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtName" layoutX="248.0" layoutY="176.0" onAction="#txtNameOnAction" prefHeight="33.0" prefWidth="353.0" promptText="Name" style="-fx-background-color: #90EE90;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
@@ -38,11 +38,11 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtAddress" layoutX="248.0" layoutY="240.0" prefHeight="33.0" prefWidth="353.0" promptText="Address" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtAddress" layoutX="248.0" layoutY="240.0" onAction="#txtAddressOnAction" prefHeight="33.0" prefWidth="353.0" promptText="Address" style="-fx-background-color: #90EE90;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
-            <TextField fx:id="txtContact" layoutX="248.0" layoutY="317.0" prefHeight="33.0" prefWidth="353.0" promptText="Contact" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtContact" layoutX="248.0" layoutY="317.0" onAction="#txtContactOnAction" prefHeight="33.0" prefWidth="353.0" promptText="Contact" style="-fx-background-color: #90EE90;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>

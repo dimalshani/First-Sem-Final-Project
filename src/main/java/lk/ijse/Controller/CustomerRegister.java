@@ -151,6 +151,30 @@ public class CustomerRegister {
         }
 
     }
+    @FXML
+    void txtAddressOnAction(ActionEvent event) {
+        txtContact.requestFocus();
+
+    }
+
+    @FXML
+    void txtContactOnAction(ActionEvent event) {
+
+
+    }
+
+    @FXML
+    void txtCustomerIdOnAction(ActionEvent event) {
+        txtName.requestFocus();
+
+    }
+
+    @FXML
+    void txtNameOnAction(ActionEvent event) {
+        txtAddress.requestFocus();
+
+    }
+
 
     public void initialize() {
 
