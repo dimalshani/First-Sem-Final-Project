@@ -20,8 +20,12 @@ public class PlaceOrderRepo {
                 System.out.println("order eka save" + po.getOrderDetailsList());
                 boolean isOrderDetailSaved = OrderDetailRepo.save(po.getOrderDetailsList());
                 if (isOrderDetailSaved) {
-                    connection.commit();
-                    return true;
+                    boolean isUpdated = ItemRepo.updateSet(po.getOrderDetailsList());
+                    if (isUpdated) {
+                        connection.commit();
+                        return true;
+
+                    }
                 }
             }
             System.out.println("order eka failed");

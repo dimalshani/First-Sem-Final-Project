@@ -56,11 +56,6 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="89.0" layoutY="241.0">
-               <image>
-                  <Image url="@../Icon/Important%20Person%20icons%20for%20free%20download%20Freepik.jpeg" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="89.0" layoutY="333.0">
                <image>
                   <Image url="@../Icon/Shopping%20Cart%20Horizontal%20Lines%20Design%20icons%20for%20free%20download%20Freepik.jpeg" />
@@ -81,14 +76,14 @@
                   <Image url="@../Icon/Black%20White%20Credit%20Cards%20icons%20for%20free%20download%20Freepik.jpeg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="89.0" layoutY="152.0">
-               <image>
-                  <Image url="@../Icon/Chef%20free%20vector%20icons%20designed%20by%20Made%20by%20Made%20Premium.jpeg" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="124.0" layoutY="714.0">
                <image>
                   <Image url="@../Icon/Freepik%20Download%20Free%20Videos,%20Vectors,%20Photos,%20and%20PSD.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="74.0" layoutY="154.0">
+               <image>
+                  <Image url="@../../../../../../icons8-customer-30.png" />
                </image>
             </ImageView>
          </children>

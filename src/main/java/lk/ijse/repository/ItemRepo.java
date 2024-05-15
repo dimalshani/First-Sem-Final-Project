@@ -2,6 +2,7 @@ package lk.ijse.repository;
 
 import lk.ijse.db.DbConnection;
 import lk.ijse.model.Item;
+import lk.ijse.model.OrderDetails;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -114,6 +115,29 @@ public class ItemRepo {
             itemList.add(item);
         }
         return itemList;
+    }
+
+    public static boolean updateSet(List<OrderDetails> list) throws SQLException {
+
+        boolean isUpdated = false;
+
+        for(OrderDetails od : list){
+            isUpdated = updateQty(new Item(od.getItemId(),"",od.getQty(),od.getUnitPrice(),""));
+        }
+
+        return isUpdated;
+    }
+
+    public static boolean updateQty(Item item) throws SQLException {
+        String sql = "UPDATE Item SET qty = qty - ?  WHERE ItemId = ?";
+
+        Connection connection = DbConnection.getInstance().getConnection();
+        PreparedStatement pstm = connection.prepareStatement(sql);
+
+        pstm.setObject(1,item.getQty());
+        pstm.setObject(2, item.getItemId());
+
+        return pstm.executeUpdate() > 0;
     }
 
 

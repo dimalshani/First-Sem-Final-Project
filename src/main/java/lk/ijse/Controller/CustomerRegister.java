@@ -189,8 +189,11 @@ public class CustomerRegister {
         textField.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (textField == txtCustomerId && !newValue.matches("^C.*$")){
-                new Alert(Alert.AlertType.INFORMATION,"Start with C").show();
+               // new Alert(Alert.AlertType.INFORMATION,"Start with C").show();
+                txtCustomerId.setStyle("-fx-focus-color:#f21e0f");
                 txtCustomerId.clear();
+            }else {
+                txtCustomerId.setStyle("-fx-focus-color:#c4c1c0");
             }
         });
 

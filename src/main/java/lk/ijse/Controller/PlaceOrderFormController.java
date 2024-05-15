@@ -316,6 +316,7 @@ public class PlaceOrderFormController {
         try {
             boolean isPlaced = PlaceOrderRepo.placeOrder(po);
             if(isPlaced) {
+                initialize();
                 getCurrentOrderId();
                 new Alert(Alert.AlertType.CONFIRMATION, "Order Placed!").show();
             } else {
