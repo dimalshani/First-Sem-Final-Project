@@ -10,7 +10,7 @@
 
 <AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #C7F6C7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.RegisterController">
    <children>
-      <AnchorPane fx:id="rootNode" layoutX="523.0" layoutY="45.0" prefHeight="695.0" prefWidth="663.0" style="-fx-background-color: #ffffff;">
+      <AnchorPane fx:id="rootNode" layoutX="523.0" layoutY="45.0" prefHeight="695.0" prefWidth="663.0" style="-fx-background-color: #D8FFD8;">
          <children>
             <Label layoutX="41.0" layoutY="86.0" prefHeight="25.0" prefWidth="130.0" text="User Id" textFill="#131413">
                <font>

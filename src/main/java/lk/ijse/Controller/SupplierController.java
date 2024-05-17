@@ -156,6 +156,7 @@ public class SupplierController {
 
     @FXML
     void txtContactOnAction(ActionEvent event) {
+        txtSupplierId.requestFocus();
 
     }
 

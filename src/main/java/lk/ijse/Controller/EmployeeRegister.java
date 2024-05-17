@@ -150,6 +150,7 @@ public class EmployeeRegister {
 
     @FXML
     void txtAddressOnAction(ActionEvent event) {
+        txtEmployeeId.requestFocus();
 
     }
 

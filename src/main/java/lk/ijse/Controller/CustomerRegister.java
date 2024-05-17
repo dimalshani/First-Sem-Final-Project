@@ -159,6 +159,7 @@ public class CustomerRegister {
 
     @FXML
     void txtContactOnAction(ActionEvent event) {
+        txtCustomerId.requestFocus();
 
 
     }

@@ -86,6 +86,7 @@ public class RegisterController {
 
     @FXML
     void txtPasswordOnAction(ActionEvent event) {
+        txtUserId.requestFocus();
 
     }
 

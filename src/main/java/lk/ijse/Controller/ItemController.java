@@ -160,6 +160,7 @@ public class ItemController {
 
     @FXML
     void txtDescriptionOnAction(ActionEvent event) {
+        txtItemId.requestFocus();
 
     }
 

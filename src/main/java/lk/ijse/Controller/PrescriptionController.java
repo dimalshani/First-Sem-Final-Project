@@ -164,6 +164,7 @@ public class PrescriptionController {
     }
     @FXML
     void txtNameOfDocterOnAction(ActionEvent event) {
+        txtPrescriptionId.requestFocus();
 
 
     }
