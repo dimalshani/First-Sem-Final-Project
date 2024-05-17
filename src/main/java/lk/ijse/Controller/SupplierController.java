@@ -182,7 +182,6 @@ public class SupplierController {
     public void initialize() {
 
         addRegex(txtSupplierId);
-        //addRegex(txtName);
         addRegex(txtContact);
 
     }
@@ -191,16 +190,22 @@ public class SupplierController {
         textField.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (textField == txtSupplierId && !newValue.matches("^S.*$")){
-                new Alert(Alert.AlertType.INFORMATION,"Start with S").show();
+                //new Alert(Alert.AlertType.INFORMATION,"Start with S").show();
+                txtSupplierId.setStyle("-fx-focus-color:#f21e0f");
                 txtSupplierId.clear();
+            } else {
+                txtSupplierId.setStyle("-fx-focus-color:#C7F6C7");
             }
         });
 
         textField.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (textField == txtContact && !newValue.matches("^\\+?[0-9\\s-]+$")){
-                new Alert(Alert.AlertType.INFORMATION,"example - +765823106 or 0765823106").show();
+                //new Alert(Alert.AlertType.INFORMATION,"example - +765823106 or 0765823106").show();
+                txtSupplierId.setStyle("-fx-focus-color:#f21e0f");
                 txtContact.clear();
+            } else {
+                txtSupplierId.setStyle("-fx-focus-color:#C7F6C7");
             }
         });
     }

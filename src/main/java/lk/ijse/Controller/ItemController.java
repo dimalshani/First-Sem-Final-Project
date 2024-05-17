@@ -19,8 +19,8 @@ import java.sql.SQLException;
 
 public class ItemController {
 
-   // @FXML
-   // private Button btnBack;
+    // @FXML
+    // private Button btnBack;
 
     @FXML
     private Button btnClear;
@@ -57,7 +57,6 @@ public class ItemController {
 
     @FXML
     private TextField txtQty;
-
 
 
     @FXML
@@ -158,6 +157,7 @@ public class ItemController {
         }
 
     }
+
     @FXML
     void txtDescriptionOnAction(ActionEvent event) {
 
@@ -187,53 +187,22 @@ public class ItemController {
 
     }
 
-}
 
-
-   /* public void initialize() {
+    public void initialize() {
 
         addRegex(txtItemId);
-         addRegex(txtName);
-        addRegex(txtQty);
-        addRegex(txtPrice);
-
     }
 
     private void addRegex(TextField textField) {
-       textField.textProperty().addListener((observable, oldValue, newValue) -> {
+        textField.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (textField == txtItemId && !newValue.matches("^I.*$")) {
-                new Alert(Alert.AlertType.INFORMATION, "Start with I").show();
+                txtItemId.setStyle("-fx-focus-color:#f21e0f");
                 txtItemId.clear();
+            } else {
+                txtItemId.setStyle("-fx-focus-color:#C7F6C7");
             }
         });
-
-        textField.textProperty().addListener((observable, oldValue, newValue) -> {
-
-            if (textField == txtName && !newValue.matches("^[A-Za-z]+(?:[\s-][A-Za-z]+)*$")) {
-                new Alert(Alert.AlertType.INFORMATION, "First letter should be capital").show();
-                txtName.clear();
-            }
-        });
-
-        textField.textProperty().addListener((observable, oldValue, newValue) -> {
-
-            if (textField == txtQty && !newValue.matches("^\\d+$")) {
-                new Alert(Alert.AlertType.INFORMATION, "example - 1,10,100,1000").show();
-                txtQty.clear();
-            }
-        });
-
-        textField.textProperty().addListener((observable, oldValue, newValue) -> {
-
-            if (textField == txtPrice && !newValue.matches("\\d+(\\.\\d{2})?")); {
-                new Alert(Alert.AlertType.INFORMATION, "example - 1,10,100,1000").show();
-                txtPrice.clear();
-            }
-        });
-
-
-
-
     }
-}*/
+}
+

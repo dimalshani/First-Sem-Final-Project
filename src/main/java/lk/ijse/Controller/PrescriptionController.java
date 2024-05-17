@@ -180,7 +180,6 @@ public class PrescriptionController {
     public void initialize() {
 
         addRegex(txtPrescriptionId);
-        addRegex(txtDate);
 
     }
 
@@ -188,19 +187,12 @@ public class PrescriptionController {
         textField.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (textField == txtPrescriptionId && !newValue.matches("^P.*$")) {
-                new Alert(Alert.AlertType.INFORMATION, "Start with P").show();
+                //new Alert(Alert.AlertType.INFORMATION, "Start with P").show();
+                txtPrescriptionId.setStyle("-fx-focus-color:#f21e0f");
                 txtPrescriptionId.clear();
+            } else {
+                txtPrescriptionId.setStyle("-fx-focus-color:#C7F6C7");
             }
         });
-
-        textField.textProperty().addListener((observable, oldValue, newValue) -> {
-
-            if (textField == txtDate && !newValue.matches("\\d{2}/\\d{2}/\\d{4}")) {
-                new Alert(Alert.AlertType.INFORMATION, "example - 2024-05-08").show();
-                txtDate.clear();
-            }
-        });
-
-
     }
 }

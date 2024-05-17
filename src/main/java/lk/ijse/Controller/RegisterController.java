@@ -113,11 +113,11 @@ public class RegisterController {
         textField.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (textField == txtUserId && !newValue.matches("^U.*$")) {
-                new Alert(Alert.AlertType.INFORMATION, "Start with U").show();
+                txtUserId.setStyle("-fx-focus-color:#f21e0f");
                 txtUserId.clear();
+            } else {
+                txtUserId.setStyle("-fx-focus-color:#C7F6C7");
             }
         });
     }
-
-
 }
