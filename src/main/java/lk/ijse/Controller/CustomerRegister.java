@@ -179,8 +179,6 @@ public class CustomerRegister {
     public void initialize() {
 
         addRegex(txtCustomerId);
-       // addRegex(txtName);
-        //addRegex(txtAddress);
         addRegex(txtContact);
 
     }
@@ -188,36 +186,24 @@ public class CustomerRegister {
     private void addRegex(TextField textField) {
         textField.textProperty().addListener((observable, oldValue, newValue) -> {
 
-            if (textField == txtCustomerId && !newValue.matches("^C.*$")){
-               // new Alert(Alert.AlertType.INFORMATION,"Start with C").show();
+            if (textField == txtCustomerId && !newValue.matches("^C.*$")) {
+                // new Alert(Alert.AlertType.INFORMATION,"Start with C").show();
                 txtCustomerId.setStyle("-fx-focus-color:#f21e0f");
                 txtCustomerId.clear();
-            }else {
-                txtCustomerId.setStyle("-fx-focus-color:#c4c1c0");
+            } else {
+                txtCustomerId.setStyle("-fx-focus-color:#C7F6C7");
             }
         });
 
-//        textField.textProperty().addListener((observable, oldValue, newValue) -> {
-//
-//            if (textField == txtName && !newValue.matches("^[A-z|\\s]{3,}$")){
-//                new Alert(Alert.AlertType.INFORMATION,"First letter should be capital").show();
-//                txtName.clear();
-//            }
-//        });
-
-       /* textField.textProperty().addListener((observable, oldValue, newValue) -> {
-
-            if (textField == txtAddress && !newValue.matches("^[\\w\\s\\.,#\\-\\/]+$")){
-                new Alert(Alert.AlertType.INFORMATION,"example- 123 Main Street or Matara").show();
-                txtAddress.clear();
-            }
-        });*/
 
         textField.textProperty().addListener((observable, oldValue, newValue) -> {
 
-            if (textField == txtContact && !newValue.matches("^\\+?[0-9\\s-]+$")){
-                new Alert(Alert.AlertType.INFORMATION,"example - +765823106 or 0765823106").show();
+            if (textField == txtContact && !newValue.matches("^\\+?[0-9\\s-]+$")) {
+                // new Alert(Alert.AlertType.INFORMATION,"example - +765823106 or 0765823106").show();
+                txtContact.setStyle("-fx-focus-color:#f21e0f");
                 txtContact.clear();
+            } else {
+                txtContact.setStyle("-fx-focus-color:#C7F6C7");
             }
         });
     }

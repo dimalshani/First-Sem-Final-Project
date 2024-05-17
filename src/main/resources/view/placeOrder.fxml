@@ -38,13 +38,13 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <ComboBox fx:id="cmbCustomerId" layoutX="156.0" layoutY="184.0" onAction="#cmbCustomerIdOnAction" prefWidth="150.0" style="-fx-background-color: #90EE90;" />
+            <ComboBox fx:id="cmbCustomerId" layoutX="156.0" layoutY="184.0" onAction="#cmbCustomerIdOnAction" prefWidth="150.0" style="-fx-background-color: #ffffff;" />
             <Label fx:id="lblCode" layoutX="16.0" layoutY="246.0" prefHeight="26.0" prefWidth="114.0" text="Code" textFill="#262826">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <ComboBox fx:id="cmbCode" layoutX="156.0" layoutY="248.0" onAction="#cmbCodeOnAction" prefWidth="150.0" style="-fx-background-color: #90EE90;" />
+            <ComboBox fx:id="cmbCode" layoutX="156.0" layoutY="248.0" onAction="#cmbCodeOnAction" prefWidth="150.0" style="-fx-background-color: #ffffff;" />
             <Label layoutX="398.0" layoutY="246.0" prefHeight="26.0" prefWidth="100.0" text="Description:" textFill="#262825">
                <font>
                   <Font name="System Bold" size="14.0" />
@@ -60,7 +60,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtQty" layoutX="563.0" layoutY="298.0" prefHeight="34.0" prefWidth="59.0" style="-fx-background-color: #90EE90;" />
+            <TextField fx:id="txtQty" layoutX="563.0" layoutY="298.0" prefHeight="34.0" prefWidth="59.0" style="-fx-background-color: #ffffff;" />
             <Button fx:id="btnAddToCart" layoutX="563.0" layoutY="366.0" mnemonicParsing="false" onAction="#btnAddToCartOnAction" prefHeight="34.0" prefWidth="138.0" style="-fx-background-color: #22DD22;" text="Add To Cart">
                <font>
                   <Font name="System Bold" size="14.0" />

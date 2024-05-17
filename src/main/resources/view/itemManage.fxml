@@ -20,7 +20,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtItemId" layoutX="209.0" layoutY="141.0" onAction="#txtItemIdOnAction" prefHeight="32.0" prefWidth="389.0" promptText="Item Id" style="-fx-background-color: #90EE90;" AnchorPane.leftAnchor="209.0">
+            <TextField fx:id="txtItemId" layoutX="209.0" layoutY="141.0" onAction="#txtItemIdOnAction" prefHeight="32.0" prefWidth="389.0" promptText="Item Id" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="209.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
@@ -44,19 +44,19 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtName" layoutX="209.0" layoutY="207.0" onAction="#txtNameOnAction" prefHeight="32.0" prefWidth="389.0" promptText="Name" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtName" layoutX="209.0" layoutY="207.0" onAction="#txtNameOnAction" prefHeight="32.0" prefWidth="389.0" promptText="Name" style="-fx-background-color: #ffffff;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
-            <TextField fx:id="txtQty" layoutX="209.0" layoutY="267.0" onAction="#txtQtyOnAction" prefHeight="32.0" prefWidth="389.0" promptText="Qty" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtQty" layoutX="209.0" layoutY="267.0" onAction="#txtQtyOnAction" prefHeight="32.0" prefWidth="389.0" promptText="Qty" style="-fx-background-color: #ffffff;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
-            <TextField fx:id="txtPrice" layoutX="209.0" layoutY="329.0" onAction="#txtPriceOnAction" prefHeight="32.0" prefWidth="389.0" promptText="Price" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtPrice" layoutX="209.0" layoutY="329.0" onAction="#txtPriceOnAction" prefHeight="32.0" prefWidth="389.0" promptText="Price" style="-fx-background-color: #ffffff;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
-            <TextField fx:id="txtDescription" layoutX="209.0" layoutY="392.0" onAction="#txtDescriptionOnAction" prefHeight="32.0" prefWidth="389.0" promptText="Description" style="-fx-background-color: #90EE90;">
+            <TextField fx:id="txtDescription" layoutX="209.0" layoutY="392.0" onAction="#txtDescriptionOnAction" prefHeight="32.0" prefWidth="389.0" promptText="Description" style="-fx-background-color: #ffffff;">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></TextField>
