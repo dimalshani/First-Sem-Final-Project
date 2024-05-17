@@ -58,37 +58,37 @@
             </Button>
             <ImageView fitHeight="30.0" fitWidth="48.0" layoutX="69.0" layoutY="243.0">
                <image>
-                  <Image url="@../../../../../../icons8-employee-30.png" />
+                  <Image url="@../Icon/icons8-employee-30.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="75.0" layoutY="335.0">
                <image>
-                  <Image url="@../../../../../../icons8-item-50.png" />
+                  <Image url="@../Icon/icons8-item-50.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="74.0" layoutY="423.0">
                <image>
-                  <Image url="@../../../../../../icons8-prescription-24.png" />
+                  <Image url="@../Icon/icons8-prescription-24.png" />
                </image>
             </ImageView>
             <ImageView layoutX="75.0" layoutY="512.0">
                <image>
-                  <Image url="@../../../../../../icons8-supplier-30.png" />
+                  <Image url="@../Icon/icons8-supplier-30.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="42.0" fitWidth="48.0" layoutX="65.0" layoutY="605.0">
                <image>
-                  <Image url="@../../../../../../icons8-order-48.png" />
+                  <Image url="@../Icon/icons8-order-48.png" />
                </image>
             </ImageView>
             <ImageView layoutX="117.0" layoutY="718.0">
                <image>
-                  <Image url="@../../../../../../icons8-back-26.png" />
+                  <Image url="@../Icon/icons8-back-26.png" />
                </image>
             </ImageView>
             <ImageView layoutX="77.0" layoutY="155.0">
                <image>
-                  <Image url="@../../../../../../icons8-customer-30.png" />
+                  <Image url="@../Icon/icons8-customer-30.png" />
                </image>
             </ImageView>
          </children>
