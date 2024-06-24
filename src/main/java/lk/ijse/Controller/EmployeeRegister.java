@@ -177,7 +177,7 @@ public class EmployeeRegister {
 
         addRegex(txtEmployeeId);
        // addRegex(txtName);
-        addRegex(txtAge);
+        //addRegex(txtAge);
        // addRegex(txtAddress);
 
     }
@@ -186,8 +186,11 @@ public class EmployeeRegister {
         textField.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (textField == txtEmployeeId && !newValue.matches("^E.*$")) {
-                new Alert(Alert.AlertType.INFORMATION, "Start with E").show();
+               // new Alert(Alert.AlertType.INFORMATION, "Start with E").show();
+                txtEmployeeId.setStyle("-fx-focus-color:#f21e0f");
                 txtEmployeeId.clear();
+            } else {
+                txtEmployeeId.setStyle("-fx-focus-color:#C7F6C7");
             }
         });
 
@@ -199,13 +202,14 @@ public class EmployeeRegister {
             }
         });*/
 
-        textField.textProperty().addListener((observable, oldValue, newValue) -> {
-
-            if (textField == txtAge && !newValue.matches("^(?:1[0-4]?\\d|150|[1-9]?\\d)$")) {
-                new Alert(Alert.AlertType.INFORMATION, "example- 6,15,102").show();
-                txtAge.clear();
-            }
-        });
+//        textField.textProperty().addListener((observable, oldValue, newValue) -> {
+//
+//            if (textField == txtAge && !newValue.matches("^(?:1[0-4]?\\d|150|[1-9]?\\d)$")) {
+//               // new Alert(Alert.AlertType.INFORMATION, "example- 6,15,102").show();
+//                txtAge.setStyle("-fx-focus-color:#f21e0f");
+//                txtAge.clear();
+//            }
+//        });
 
         /*textField.textProperty().addListener((observable, oldValue, newValue) -> {
 

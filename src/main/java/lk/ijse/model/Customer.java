@@ -1,5 +1,9 @@
 package lk.ijse.model;
 
+
+import lombok.Data;
+
+
 public class Customer {
     private String customerId;
     private String name;
